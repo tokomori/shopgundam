@@ -2,7 +2,7 @@
 /*end reset*/
 html, body{
     font-size: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Inter', sans-serif;
 	background-image: url(https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uiIF7IitZh2ZOUYUegetT5lN_wZiRs-7y0zGvVt1YRwqoWTBrXOmQoKNUPUPoBa-P0gc3c2jUcV8JKfH5RvAQjpLLNf3Vaej9IrIkDNw-1r9Mj2Axo4lBtqp7YCvMl=w919-h516-p-k-no-nu);
 	background-size:auto;
 	background-attachment:fixed;
@@ -10,12 +10,17 @@ html, body{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
+	height: 890px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 500px;
 }
 body {
-		padding-bottom:30px;
+		padding-bottom:10px;
 }
 h1,h2,h3,h4,h5,h6,input,p,a,select,button,textarea{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Inter', sans-serif;
 	margin:0;
 }
 ul,label{
@@ -25,6 +30,7 @@ ul,label{
 body a:hover,body a{
 	text-decoration:none;
 }
+
 
 
 
@@ -58,6 +64,9 @@ body a:hover,body a{
 
 .login {
 	width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 30px 0;
 	margin: 16px auto;
 	font-size: 16px;
     padding-right: 50%;
@@ -82,7 +91,7 @@ body a:hover,body a{
 .login-header {
     background: #33b5e5;
     padding: 20px;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
@@ -102,7 +111,7 @@ body a:hover,body a{
 .login input[type="password"] {
     background: #fff;
     margin: 25px 0px;
-    color:#ccc6c6;
+    color:#000000;
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -114,7 +123,7 @@ body a:hover,body a{
     font-size: 0.95em;
 }
 .login-container input[type="email"] {
-	color:#ccc6c6;
+	color:#000000;
 }
 
 .login-container input[type="email"]:hover {
@@ -181,14 +190,15 @@ body a:hover,body a{
 /* buttons */
 .social-links ul li {
     display: inline-block;
+    margin: 0 0 0 57px;
 }
 
 .social-links a {
-	width: 170px;
-    height: 40px;
+	width: 100px;
+    height: 400px;
     display: inline-block;
-    /* border-radius: 50%; */
-    /* font-size: 24px; */
+    border-radius: 50%; 
+    font-size: 24px; 
     color: #ffffff;
 	opacity: 0.75;
 	transition: opacity 0.15s linear;
@@ -201,8 +211,8 @@ body a:hover,body a{
 /* icons */
 
 .social-links i {
-    line-height: 43px;
-    font-size: 30px;
+    line-height: 37px;
+    font-size: 20px;
 }
 
 /* colors */
@@ -217,14 +227,6 @@ body a:hover,body a{
 
 .googleplus {
     background: #dd4b39;
-}
-
-.linkedin {
-    background: #0077b5;
-}
-
-.pinterest {
-    background: #cb2027;
 }
 
 .login-container input[type="submit"] {
@@ -296,7 +298,7 @@ input[type=submit]:hover {
 /* .footer-w3l {
 	
 } */
-.footer-w3l p{
+/* .footer-w3l p{
 	font-size:14px;
 	letter-spacing:0.5px;
 	color:#fff;
@@ -315,7 +317,7 @@ input[type=submit]:hover {
     -ms-transition: .5s ease-in;
     -o-transition: .5s ease-in;
     -moz-transition:.5s ease-in;
-}
+} */
 /* responsive design */
 @media only screen and (max-width:1080px) {
 .login-title {

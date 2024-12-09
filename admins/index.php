@@ -692,10 +692,10 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- content-wrapper ends -->
-
-<!-- Footer -->
+            <!-- Footer -->
 <?php 
     require 'includes/footer.php';
 ?>
+          </div>
+          <!-- content-wrapper ends -->
+
