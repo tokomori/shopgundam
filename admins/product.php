@@ -3,7 +3,7 @@
 ?>
 
 <div class="content-wrapper">
-    <p>Trang của sản phẩm</p>
+    
     
     <?php 
     require 'db/connect.php';
@@ -50,9 +50,8 @@
     }
     ?>
 
-</div>
-
 <!-- Footer -->
 <?php 
     require 'includes/footer.php';
 ?>
+</div>

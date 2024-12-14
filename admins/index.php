@@ -698,13 +698,5 @@
     require 'includes/footer.php';
 ?>
     </div>
-
-=======
-            <!-- Footer -->
-<?php 
-    require 'includes/footer.php';
-?>
-          </div>
->>>>>>> 556260cb36ee5436c59a5762b92f12774bd9a425
           <!-- content-wrapper ends -->
 

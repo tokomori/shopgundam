@@ -16,9 +16,10 @@
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="product.php">Sản phẩm</a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Thêm sản phẩm</a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Sửa sản phẩm</a></li>
+          <li class="nav-item"> <a class="nav-link" href="product.php">Danh sách</a></li>
+          <li class="nav-item"> <a class="nav-link" href="addproduct.php">Thêm sản phẩm</a></li>
+          <li class="nav-item"> <a class="nav-link" href="fixproduct.php">Sửa sản phẩm</a></li>
+          <li class="nav-item"> <a class="nav-link" href="delproduct.php">Xóa sản phẩm</a></li>
         </ul>
       </div>
     </li>
