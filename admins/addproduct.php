@@ -50,7 +50,13 @@
                     Vui lòng nhập mô tả sản phẩm.
                 </div>
             </div>
+            <span>Hình ảnh
+                <form action="" method="post" enctype="multipart/form-data" class="col-md-6 mb-3">
+                    <input type="file" name="image_url[]" id="image_url" multiple></br>
 
+                    <input type="submit" value="Upload" name="submit">
+                </form>
+            </span>
             <div class="col-md-6 mb-3">
                 <label for="quantity">Số lượng</label>
                 <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Số lượng" required>
@@ -64,14 +70,6 @@
                 <input type="text" class="form-control" id="price" name="price" placeholder="Giá" required>
                 <div class="invalid-feedback">
                     Vui lòng nhập giá sản phẩm.
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-                <label for="image">Hình ảnh</label>
-                <input type="text" class="form-control" id="image" name="image" placeholder="Hình ảnh" required>
-                <div class="invalid-feedback">
-                    Vui lòng nhập đường dẫn hình ảnh.
                 </div>
             </div>
 
