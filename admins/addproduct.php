@@ -52,7 +52,7 @@
             </div>
             <span>Hình ảnh
                 <form action="" method="post" enctype="multipart/form-data" class="col-md-6 mb-3">
-                    <input type="file" name="image_url[]" id="image_url" multiple></br>
+                    <input type="file" name="anhs[]" id="amhs" multiple></br>
 
                     <input type="submit" value="Upload" name="submit">
                 </form>

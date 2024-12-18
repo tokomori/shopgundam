@@ -14,28 +14,47 @@
     $updated_at = $_POST['updated_at'];
 
     //upload anh
-                        // $countfiles = count($_FILES['image_url']);
 
-                        $image_url = '';
-                        for($i=0; $i++; $i){
-                            $filename = $_FILES['image_url']['name'][$i];
+            $uploaddir = 'uploads/';
+            $uploadfile = $uploaddir . basename($_FILES['anhs']['name']);
 
-                            $location = "uploads/". $filename;
-                            $extension = pathinfo($location,PATHINFO_EXTENSION);
-                            $extension = strtolower($extension);
+            $images = 1;
+            $imageFileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
+            // check 
+            if(isset($_POST["submit"])){
+                $check = getimagesize($_FILES['anhs']['name']);
+                if($check !== false){
+                    echo "File is an image - ". $check['mine']. " .";
+                    $images = 1;
+                } else {
+                    echo "File not an image";
+                    $images = 0;
+                }
+            }
 
-                            $valid_extensions = array("jpg", "png");
-                            $reponse = 0;
-                            if(in_array(strtolower($extension), $valid_extensions)){
-                                if(move_uploaded_file($_FILES['image_url']['tmp_name'][$i], $location)){
-                                    // echo "file name : ".$filename."</br>";
+                        // $uploaddir = 'admins/uploads/';
+                        // $uploadfile = $uploaddir . basename($_FILES['image_url']['name']);
 
-                                    // $totalFilesUploaded++;
-                                    $image_url .= $location . ";";
-                                }
-                            }
-                        }
-                        echo substr($image_url, 0, -1);exit;
+                        // $image_url = '';
+                        // for($i=0; $i++; $i){
+                        //     $filename = $_FILES['image_url']['name'][$i];
+
+                        //     $location = "uploads/". $filename;
+                        //     $extension = pathinfo($location,PATHINFO_EXTENSION);
+                        //     $extension = strtolower($extension);
+
+                        //     $valid_extensions = array("jpg", "png");
+                        //     $reponse = 0;
+                        //     if(in_array(strtolower($extension), $valid_extensions)){
+                        //         if(move_uploaded_file($_FILES['image_url']['tmp_name'][$i], $location)){
+                        //             // echo "file name : ".$filename."</br>";
+
+                        //             // $totalFilesUploaded++;
+                        //             $image_url .= $location . ";";
+                        //         }
+                        //     }
+                        // }
+                        // echo $image_url;
     // câu lệnh thêm sản phẩm
     $sql = "INSERT INTO `products` (`id`, `product_name`, `brands_id`, `brands_name`, `description`, `quantity`, `price`, `image_url`, `category_id`, `created_at`, `updated_at`) 
     VALUES 
